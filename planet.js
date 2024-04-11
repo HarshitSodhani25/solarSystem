@@ -77,6 +77,7 @@ const saturn = createPlanet(10, saturnTexture, 138, {innerRadius: 7, outerRadius
 const uranus = createPlanet(7, uranusTexture, 176, {innerRadius: 7, outerRadius: 12, texture: uranusRingTexture});
 const neptune = createPlanet(7, neptuneTexture, 200);
 const pluto = createPlanet(2.8, plutoTexture, 216);
+const pluto2 = createPlanet(2.8, plutoTexture, 220);
 
 const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
 directionalLight.position.set(0, 1, 0); // Adjust position as needed
@@ -96,6 +97,7 @@ function animate(){
     uranus.mesh.rotateY(0.03);
     neptune.mesh.rotateY(0.032);
     pluto.mesh.rotateY(0.008);
+    pluto2.mesh.rotateY(0.006);
 
     //around sun-rotation
     mercury.obj.rotateY(0.03);
@@ -107,6 +109,7 @@ function animate(){
     uranus.obj.rotateY(0.0004);
     neptune.obj.rotateY(0.0001);
     pluto.obj.rotateY(0.00007);
+    pluto2.obj.rotateY(0.00077);
     
     renderer.render(scene, camera);
 }
