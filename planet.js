@@ -69,10 +69,10 @@ function createPlanet(size, texture, position, ring) {
 }
 
 const mercury = createPlanet(3.2, mercuryTexture, 28);
-const venus = createPlanet(5.81, venusTexture, 44);
+const venus = createPlanet(5.8, venusTexture, 44);
 const earth = createPlanet(6, earthTexture, 62);
 const mars = createPlanet(4, marsTexture, 78);
-const jupiter = createPlanet(12, jupiterTexture, 100);
+const jupiter = createPlanet(12.1, jupiterTexture, 100);
 const saturn = createPlanet(10, saturnTexture, 138, {innerRadius: 7, outerRadius: 20, texture: saturnRingTexture});
 const uranus = createPlanet(7, uranusTexture, 176, {innerRadius: 7, outerRadius: 12, texture: uranusRingTexture});
 const neptune = createPlanet(7, neptuneTexture, 200);
